@@ -77,4 +77,43 @@ app.post('/question', function(req, res) {
   console.log(typeof(data));
 
   res.send("processing");
+});*/
+//==================================================
+//Added functions
+//returns a single trivia question
+
+app.get('/question', function(req, res)
+{
+  console.log('getting question');
+
+  //create variables for Q and A
+
+  var question //use body parser body.question
+  var answer 
+
+  //find looks through db
+  //db.find.question
+
 });
+
+//creates a new trivia question
+app.post('/question', function(req, res)
+{
+  console.log('creating question');
+
+  //insert stores it into the db
+  //db.insert.quesion
+
+});
+//takes an answerId and possible answer
+app.post('/answer', function(req, res)
+{
+  console.log('Is the answer correct?');
+  //find answerId
+});
+//returns current count of right and wrong answers
+app.get('/score', function(req, res)
+{
+  console.log('keeping score');
+});
+
